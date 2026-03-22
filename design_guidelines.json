@@ -1,0 +1,202 @@
+{
+  "project_name": "NCERT Adaptive Learning Platform",
+  "design_philosophy": {
+    "persona": "E1 - The Intelligent Optimist",
+    "core_values": [
+      "Fusion: Academic Rigor x Playful Discovery",
+      "Emotion: Encouraging, Clear, Focused",
+      "Content: Data tells a story of growth, not just scores"
+    ],
+    "anti_patterns": [
+      "Generic 'Admin Panel' vibes",
+      "Dark mode by default (Education needs light)",
+      "Dense tables without visual hierarchy",
+      "Gradients that make text hard to read"
+    ]
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Outfit, sans-serif",
+      "body": "Inter, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-4xl md:text-6xl font-bold tracking-tight",
+      "h2": "text-3xl md:text-4xl font-semibold tracking-tight",
+      "h3": "text-2xl font-semibold",
+      "body_lg": "text-lg leading-relaxed",
+      "body_base": "text-base leading-relaxed text-slate-600",
+      "caption": "text-sm font-medium text-slate-500 uppercase tracking-wider"
+    },
+    "imports": [
+      "@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;700;900&display=swap');"
+    ]
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "name": "Electric Indigo",
+        "hex": "#4338ca",
+        "tailwind": "bg-indigo-700 text-white hover:bg-indigo-800"
+      },
+      "secondary": {
+        "name": "Growth Teal",
+        "hex": "#0d9488",
+        "tailwind": "bg-teal-600 text-white"
+      },
+      "accent": {
+        "name": "Focus Orange",
+        "hex": "#ea580c",
+        "tailwind": "bg-orange-600 text-white"
+      },
+      "background": {
+        "main": "#F8FAFC",
+        "card": "#FFFFFF",
+        "subtle": "#F1F5F9"
+      },
+      "text": {
+        "main": "#0F172A",
+        "muted": "#64748B"
+      }
+    },
+    "css_variables": {
+      "--background": "210 40% 98%",
+      "--foreground": "222 47% 11%",
+      "--card": "0 0% 100%",
+      "--card-foreground": "222 47% 11%",
+      "--popover": "0 0% 100%",
+      "--popover-foreground": "222 47% 11%",
+      "--primary": "243 75% 59%",
+      "--primary-foreground": "210 40% 98%",
+      "--secondary": "173 80% 40%",
+      "--secondary-foreground": "210 40% 98%",
+      "--muted": "210 40% 96.1%",
+      "--muted-foreground": "215.4 16.3% 46.9%",
+      "--accent": "24 95% 53%",
+      "--accent-foreground": "210 40% 98%",
+      "--destructive": "0 84.2% 60.2%",
+      "--destructive-foreground": "210 40% 98%",
+      "--border": "214.3 31.8% 91.4%",
+      "--input": "214.3 31.8% 91.4%",
+      "--ring": "222.2 84% 4.9%",
+      "--radius": "0.75rem"
+    }
+  },
+  "layout_strategy": {
+    "spacing": {
+      "container_padding": "p-6 md:p-12",
+      "section_gap": "gap-8 md:gap-12",
+      "internal_card_padding": "p-6"
+    },
+    "grids": {
+      "dashboard": "grid grid-cols-1 md:grid-cols-12 gap-6",
+      "landing": "grid grid-cols-1 md:grid-cols-12 gap-8"
+    },
+    "containers": {
+      "main_wrapper": "max-w-7xl mx-auto w-full min-h-screen bg-slate-50/50",
+      "card": "bg-white rounded-xl border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "rounded-full px-8 py-3 font-semibold shadow-lg shadow-indigo-500/20 hover:scale-105 active:scale-95 transition-all",
+      "secondary": "rounded-lg px-6 py-2 font-medium border border-slate-200 hover:bg-slate-50 hover:border-slate-300 transition-all",
+      "ghost": "rounded-lg px-4 py-2 font-medium text-slate-600 hover:text-indigo-600 hover:bg-indigo-50 transition-all"
+    },
+    "cards": {
+      "stat_card": "flex flex-col justify-between p-6 bg-white rounded-xl border border-slate-100 shadow-sm relative overflow-hidden group",
+      "feature_card": "p-8 bg-white rounded-2xl border border-slate-100 hover:border-indigo-100 hover:shadow-xl transition-all duration-500 group"
+    },
+    "inputs": {
+      "default": "h-12 rounded-lg border-slate-200 focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-white/80 border border-white/20 shadow-sm",
+    "gradients": {
+      "hero_text": "bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-teal-500",
+      "subtle_bg": "bg-gradient-to-br from-slate-50 to-indigo-50/30"
+    },
+    "shadows": {
+      "soft": "shadow-[0_8px_30px_rgb(0,0,0,0.04)]",
+      "glow": "shadow-[0_0_20px_rgba(79,70,229,0.15)]"
+    },
+    "motion": {
+      "page_transition": {
+        "initial": { "opacity": 0, "y": 20 },
+        "animate": { "opacity": 1, "y": 0 },
+        "exit": { "opacity": 0, "y": -20 },
+        "transition": { "duration": 0.4, "ease": "easeOut" }
+      },
+      "hover_lift": "hover:-translate-y-1 transition-transform duration-300"
+    }
+  },
+  "assets": {
+    "images": {
+      "hero_main": {
+        "url": "https://images.unsplash.com/photo-1561346745-5db62ae43861?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzF8MHwxfHNlYXJjaHwxfHxzdHVkZW50JTIwc3R1ZHlpbmclMjBsYXB0b3AlMjBoYXBweXxlbnwwfHx8fDE3NzAzNTA0ODB8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Mentor guiding student",
+        "usage": "Hero section right side image"
+      },
+      "abstract_bg": {
+        "url": "https://images.unsplash.com/photo-1759724369762-376e0a29478b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTF8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMHRlY2hub2xvZ3klMjBuZXR3b3JrJTIwbGlnaHQlMjBibHVlJTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc3MDM1MDQ4Mnww&ixlib=rb-4.1.0&q=85",
+        "alt": "Abstract blue circles",
+        "usage": "Subtle background overlay for 'How it Works' section"
+      },
+      "floating_3d": {
+        "url": "https://images.unsplash.com/photo-1720151135171-df438915a0e5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwyfHwzZCUyMG1hdGglMjBzY2llbmNlJTIwZWR1Y2F0aW9uJTIwaWNvbnN8ZW58MHx8fHwxNzcwMzUwNDg3fDA&ixlib=rb-4.1.0&q=85",
+        "alt": "3D floating shapes",
+        "usage": "Decorative element near 'ML Features' cards"
+      }
+    },
+    "icons": {
+      "library": "lucide-react",
+      "style": "Stroke width 1.5px, size 20px or 24px"
+    }
+  },
+  "page_specific_rules": {
+    "home": {
+      "layout": "Tetris Grid (Mode A)",
+      "key_elements": [
+        "Hero: Big bold text 'Master Class 10 with AI'",
+        "Feature Grid: 3 cards (Adaptive, Analytics, Content)",
+        "CTA: 'Start Learning Now' (Pill button)"
+      ]
+    },
+    "dashboard": {
+      "layout": "Bento Grid (Mode B)",
+      "key_elements": [
+        "Welcome Header (No 'Dashboard' title)",
+        "Stats Row: Current Level, Confidence Score, Streak",
+        "Main Chart: Progress over time (Area Chart)",
+        "Weak Topics: List with 'Practice' action buttons"
+      ]
+    },
+    "quiz": {
+      "layout": "Focused Center Layout",
+      "key_elements": [
+        "Progress Bar (Top)",
+        "Question Card (Center, large text)",
+        "Options Grid (2x2)",
+        "No distractions/sidebar"
+      ]
+    },
+    "analytics": {
+      "layout": "Masonry/Grid",
+      "key_elements": [
+        "Detailed Charts (Bar, Line, Radar for skills)",
+        "Topic Mastery Heatmap"
+      ]
+    }
+  },
+  "universal_guidelines": [
+    "Use 'Outfit' font for all headings to give a modern, friendly feel.",
+    "Ensure all interactive elements have hover states (color shift or lift).",
+    "Use generous padding (p-8+) in cards to avoid clutter.",
+    "Charts must use the brand palette (Indigo, Teal, Orange) - no default library colors.",
+    "Mobile responsiveness is critical - stack grids to 1 column on mobile.",
+    "Use 'sonner' for all toast notifications.",
+    "Add 'data-testid' to all interactive elements."
+  ],
+  "instructions_to_main_agent": "Follow the JSON structure strictly. Implement the CSS variables in index.css first. Use the provided image URLs. Do not ask for clarification. If a component is missing, build it using the 'card' and 'button' styles defined here."
+}
